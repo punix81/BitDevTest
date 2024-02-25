@@ -1,0 +1,9 @@
+<div>
+	<input [(ngModel)]="inputString" placeholder="Enter a string" type="text" />
+	<button (click)="reverseString()" obButton="primary">Reverse</button>
+</div>
+
+<div *ngIf="reversedString">
+	<p>Original string: {{ inputString }}</p>
+	<p>Reversed string: {{ reversedString }}</p>
+</div>
